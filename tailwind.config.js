@@ -43,7 +43,8 @@ export default {
       borderRadius: {
         sm: '0.6rem',
         md: '0.8rem',
-        lg: '1rem'
+        lg: '1rem',
+        '4xl': '9rem'
       },
       colors: {
         blue: 'hsl(208, 49%, 24%)',
@@ -58,9 +59,16 @@ export default {
         }
       },
       backgroundImage: {
-        intro: 'linear-gradient(hsl(13, 100%, 72%), hsl(353, 100%, 62%))',
+        test: 'url(./src/assets/intro-mobile.svg),linear-gradient(135deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%))',
+        intro: 'linear-gradient(135deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%))',
         body: 'linear-gradient(hsl(237, 17%, 21%, hsl(237, 23%, 32%))'
-      }
+      },
+      backgroundSize: {
+        test: '300%, cover'
+      },
+      backgroundPosition: {
+        test: 'top 36% left 39%, center'
+      },
     },
   },
   plugins: [],
