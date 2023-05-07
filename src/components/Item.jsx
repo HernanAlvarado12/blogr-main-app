@@ -3,7 +3,7 @@ import { useEffect, useState } from "react"
 const Item = ({ classList = '', text, icon, color, subItems = [], handleClick }) => {
 
     const colorVariants = {
-        gray: 'text-gray-100',
+        gray: 'text-gray-100 font-light',
         blue: 'text-blue',
         white: 'text-white'
     }

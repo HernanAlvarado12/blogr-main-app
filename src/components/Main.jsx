@@ -13,7 +13,7 @@ const Main = () => {
     return (
         <main className="mb-52">
             <section className="w-90 mx-auto mt-8">
-                <h2 className="mb-3 text-blue text-base text-center">Desinged for the future</h2>
+                <h2 className="mb-3 text-blue text-base font-ubuntu font-medium text-center">Desinged for the future</h2>
                 <Picture mobile={editorMobile} desktop={editorDesktop} />
                 <Comment content={data[0]} />
                 <Comment classList="mb-52" content={data[1]} />

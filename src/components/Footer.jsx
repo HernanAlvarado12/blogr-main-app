@@ -13,13 +13,13 @@ const Footer = () => {
                 <img className="mx-auto mb-6" src={logo} alt="logo icon" />
                 <section className="grid gap-y-6">
                     <ul className="flex flex-col gap-y-1">
-                        <List classList="first:mb-2" listItems={product} color="gray" />
+                        <List classList="first:mb-2 first:font-semibold" listItems={product} color="gray" />
                     </ul>
                     <ul className="flex flex-col gap-y-1">
-                        <List classList="first:mb-2" listItems={company} color="gray" />
+                        <List classList="first:mb-2 first:font-semibold" listItems={company} color="gray" />
                     </ul>
                     <ul className="flex flex-col gap-y-1">
-                        <List classList="first:mb-2" listItems={connect} color="gray" />
+                        <List classList="first:mb-2 first:font-semibold" listItems={connect} color="gray" />
                     </ul>
                 </section>
             </section>
