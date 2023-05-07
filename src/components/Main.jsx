@@ -12,21 +12,18 @@ import data from "../helpers/data"
 const Main = () => {
     return (
         <main className="mb-52">
-            <section className="w-90 mx-auto mt-8">
-                <h2 className="mb-3 text-blue text-base font-ubuntu font-medium text-center">Desinged for the future</h2>
-                <Picture mobile={editorMobile} desktop={editorDesktop} />
-                <Comment content={data[0]} />
-                <Comment classList="mb-52" content={data[1]} />
+            <section className="w-90 mx-auto mt-8 ts:grid ts:grid-cols-2 ts:gap-x-2">
+                <h2 className="mb-3 text-blue text-base font-ubuntu font-medium text-center ts:col-span-2">Desinged for the future</h2>
+                <Picture classList="ts:m-auto ts:col-start-2 ts:row-start-2 ts:row-end-5" mobile={editorMobile} desktop={editorDesktop} />
+                <Comment classTitle="ts:mt-2 ts:mb-1 ts:text-base" content={data[0]} />
+                <Comment classList="mb-52 ts:mb-0" classTitle="ts:mt-2 ts:mb-1 ts:text-base" content={data[1]} />
             </section>
-            <section className="mt-[30rem] mb-8 relative">
-                <img className="absolute z-10 -top-1/3" src={phones} alt="phones image" />
-                <article className="w-full pt-72 pb-8 relative overflow-hidden rounded-bl-4xl rounded-tr-4xl bg-body">
-                    <img className="w-full absolute -top-1/4" src={circle} alt="circle image" />
-                    <Comment classList="w-90 mx-auto relative z-10" content={data[2]} isGray={false} />
-                </article>
+            <section className="mt-[30rem] mb-8 pt-52 pb-8 relative rounded-tr-4xl rounded-bl-4xl bg-body bg-no-repeat md:mt-10 md:pt-6 md:pb-2 md:grid md:items-center md:grid-cols-2">
+                <img className="max-w-[38rem] mx-auto absolute inset-x-0 z-10 bottom-[60%] md:relative md:inset-auto" src={phones} alt="phones image" />
+                <Comment classList="w-90 mx-auto relative z-10 md:w-full" classTitle="md:mt-0" content={data[2]} isGray={false} />
             </section>
-            <section className="w-90 mx-auto">
-                <Picture mobile={laptopMobile} desktop={laptopDesktop} />
+            <section className="w-90 mx-auto ts:grid ts:grid-cols-2 ts:gap-x-2 ts:items-center">
+                <Picture classList="ts:row-span-2" mobile={laptopMobile} desktop={laptopDesktop} />
                 <Comment content={data[3]} />
                 <Comment content={data[4]} />
             </section>

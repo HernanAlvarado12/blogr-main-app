@@ -8,8 +8,8 @@
  */
 const Button = ({ classList = '', text, color  }) => {
     const colorVariants = {
-        red: 'text-red border-transparent bg-white',
-        white: 'text-white border-white bg-transparent',
+        red: 'text-red border-transparent bg-white hover:text-white hover:bg-red-100',
+        white: 'text-white border-white bg-transparent hover:text-red hover:bg-white',
     }
     const colorStyle = colorVariants[color] ?? 'text-blue border-transparent bg-transparent'
     return (

@@ -22,7 +22,7 @@ const List = ({ classList = '', listItems = [], color, hasIcon = false, subItems
 
     return (
         <>
-            { listItems.map((item, key) => <Item key={key} classList={classList} text={item} color={color} icon={hasIcon? icon : null } subItems={subItems[key]} handleClick={handleClick} />) }
+            { listItems.map((item, key) => <Item key={key} classList={classList} text={item} color={color} icon={hasIcon} subItems={subItems[key]} handleClick={handleClick} />) }
         </>
     )
 }

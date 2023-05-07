@@ -7,6 +7,9 @@ export default {
   },
   theme: {
     extend: {
+      screens: {
+        ts: '900px',
+      },
       spacing: {
         '0.2': '0.2rem',
         '0.5': '0.5rem',
@@ -39,6 +42,7 @@ export default {
         base: '2.4rem',
         med: '2.8rem',
         lg: '3.2rem',
+        lg2: '3.6rem',
         xl: '4.2rem'
       },
       borderRadius: {
@@ -62,15 +66,20 @@ export default {
           200: 'hsl(240, 10%, 16%)'
         }
       },
+      gridTemplateColumns: {
+        footer: 'repeat(auto-fit, minmax(20rem, 1fr))'
+      },
       backgroundImage: {
         intro: 'url(./src/assets/intro-mobile.svg), linear-gradient(135deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%))',
-        body: 'linear-gradient(hsl(237, 17%, 21%), hsl(237, 23%, 32%))'
+        body: 'url(./src/assets/circles.svg),linear-gradient(hsl(237, 17%, 21%), hsl(237, 23%, 32%))'
       },
       backgroundSize: {
-        intro: '300%, cover'
+        intro: '300%, cover',
+        body: '100%, 100%',
       },
       backgroundPosition: {
-        intro: 'top 36% left 39%, center'
+        intro: 'top 36% left 39%, center',
+        body: 'bottom 30vh left 50%, center',
       },
     },
   },
