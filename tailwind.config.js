@@ -37,6 +37,7 @@ export default {
         sm: '1.6rem',
         md: '1.8rem',
         base: '2.4rem',
+        med: '2.8rem',
         lg: '3.2rem',
         xl: '4.2rem'
       },
@@ -61,7 +62,7 @@ export default {
       backgroundImage: {
         test: 'url(./src/assets/intro-mobile.svg),linear-gradient(135deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%))',
         intro: 'linear-gradient(135deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%))',
-        body: 'linear-gradient(hsl(237, 17%, 21%, hsl(237, 23%, 32%))'
+        body: 'linear-gradient(hsl(237, 17%, 21%), hsl(237, 23%, 32%))'
       },
       backgroundSize: {
         test: '300%, cover'
