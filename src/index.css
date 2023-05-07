@@ -16,3 +16,9 @@
     font-family: 'Ubuntu', sans-serif;
   }
 }
+
+@layer utilities {
+  .active {
+    @apply flex;
+  }
+}
