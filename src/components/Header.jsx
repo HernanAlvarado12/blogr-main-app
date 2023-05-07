@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { Button } from "./Button"
 import { List } from "./List"
 import logo from "../assets/logo.svg"
@@ -10,13 +10,18 @@ const headerSubItems = [ ['Overview', 'Pricing', 'Marketplace', 'Features', 'Int
 
 const Header = () => {
     const [menuIcon, setMenuIcon] = useState(false)
+    const [classList, setClassList] = useState('hidden')
+
+    useEffect(() => {
+        setClassList(menuIcon? 'block' : 'hidden')
+    }, [menuIcon])
 
     return (
         <header className="pb-8 text-white rounded-bl-4xl bg-test bg-no-repeat">
             <nav className="w-90 h-10 mx-auto flex items-center justify-between relative">
                 <img className="h-3" src={logo} alt="logo icon" />
-                <img src={menu} alt="menu icon" />
-                <aside className="w-full py-3 px-2 absolute top-9 rounded-sm shadow-xl bg-white">
+                <img src={menu} alt="menu icon" onClick={() => setMenuIcon(!menuIcon)} />
+                <aside className={`w-full py-3 px-2 ${classList} absolute top-9 rounded-sm shadow-xl bg-white`}>
                     <menu className="flex items-center flex-col gap-y-3">
                         <List listItems={headerList} color="blue" hasIcon={true} subItems={headerSubItems}/>
                         <Button classList="-mb-2" text="Login" color="blue" />
