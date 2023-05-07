@@ -39,7 +39,6 @@ const Header = () => {
                     <Button text="Learn more" color="white" />
                 </div>
             </section>
-
         </header>
     )
 }

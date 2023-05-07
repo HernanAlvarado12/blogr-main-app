@@ -60,7 +60,7 @@ export default {
         }
       },
       backgroundImage: {
-        test: 'url(./src/assets/intro-mobile.svg),linear-gradient(135deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%))',
+        test: 'url(./src/assets/intro-mobile.svg), linear-gradient(135deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%))',
         intro: 'linear-gradient(135deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%))',
         body: 'linear-gradient(hsl(237, 17%, 21%), hsl(237, 23%, 32%))'
       },
