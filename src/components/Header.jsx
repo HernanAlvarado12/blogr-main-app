@@ -6,6 +6,7 @@ import menu from "../assets/menu.svg"
 
 const headerList = ['Product', 'Company', 'Connect']
 const headerSubItems = [ ['Overview', 'Pricing', 'Marketplace', 'Features', 'Integrations'], ['About', 'Team', 'Blog', 'Careers'], ['Contact', 'Newsletter', 'LinkedIn'] ]
+const classHover = "relative after:content-[''] after:w-full after:h-0.2 after:absolute after:bottom-0 after:left-0 after:scale-x-0 after:origin-left after:transition-all after:duration-500 after:bg-white hover:after:scale-x-100"
 
 
 const Header = () => {
@@ -23,7 +24,7 @@ const Header = () => {
                 <img className="cursor-pointer ts:hidden" src={menu} alt="menu icon" onClick={() => setMenuIcon(!menuIcon)} />
                 <aside className={`w-full py-3 px-2 ${classList} absolute top-9 rounded-sm shadow-xl bg-white ts:flex-1 ts:ml-3 ts:p-0 ts:block ts:relative ts:top-0 ts:shadow-none ts:bg-transparent`}>
                     <menu className="flex items-center flex-col gap-y-3 ts:flex-row ts:justify-between ts:gap-x-2">
-                        <List classList="ts:text-white ts:font-normal" listItems={headerList} color="blue" hasIcon={true} subItems={headerSubItems}/>
+                        <List classList={`ts:text-white ts:font-normal ${classHover}`} listItems={headerList} color="blue" hasIcon={true} subItems={headerSubItems}/>
                         <Button classList="-mb-2 ts:mb-0 ts:ml-auto ts:mr-2 ts:text-white" text="Login" color="blue" />
                         <Button text="Sign Up" color="red" />
                     </menu>
