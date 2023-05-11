@@ -13,6 +13,14 @@ const Header = () => {
     const [menuIcon, setMenuIcon] = useState(false)
     const [classList, setClassList] = useState('hidden')
 
+
+    useEffect(() => {
+        const eventListener = () => setClassList('hidden')
+        window.matchMedia('(max-width: 899px)').addEventListener('change', eventListener)
+
+        return () => window.removeEventListener('change', eventListener)
+    }, [])
+
     useEffect(() => {
         setClassList(menuIcon? 'block' : 'hidden')
     }, [menuIcon])
